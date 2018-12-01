@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Forecatser</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <div id="content">
+        <div id="request">
+            <input id="location" class='bl' type="text">
+            <input id="submit" class="bl" type="button" value="Get Weather">
+        </div>
+        <div id="forecast" style="display:none">
+            <div id="current">
+                <div class="label">Current conditions</div>
+            </div>
+            <div id="upcoming">
+                <div class="label">Three-day forecast</div>
+            </div>
+        </div>
+    </div>
+    <script src="forecasterAsyncAwait.js"></script>
+    <script>
+        attachEvents();
+    </script>
+</body>
+
+</html>
